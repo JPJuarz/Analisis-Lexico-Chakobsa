@@ -118,4 +118,5 @@ El uso de un DFA es el método más óptimo en este caso, ya que garantiza un ti
 
 ## Referencias
 AutomataVerse. (2026). Visualize Automata. Recuperado de https://www.automataverse.com/
+
 Herbert, F. (2005). Dune. Ace Books.
