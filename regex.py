@@ -1,38 +1,28 @@
-def parse(word):
-    # Todas empiezan con m
-    if not word.startswith("m"):
-        print("Rejected")
-        return
+import re
 
-    # Cuando es midri
-    if word == "midri":
-        print(word, " = Accepted")
-        return
+def parse(input):
+    listwords = input.split(",")
+    return listwords
 
-    # Las que empiezan con ma
-    if word.startswith("ma"):
-        if word == "mahdi":
-            print(word, " = Accepted")
-        elif word == "maqbara":
-            print(word, " = Accepted")
-        elif word == "matar":
-            print(word, " = Accepted")
-        elif word == "maula":
-            print(word, " = Accepted")
+def accepted(listwords):
+    # Regex  
+    expression = r'^(m(idri|a(hdi|qbara|tar|ula)))$'
+
+    # Checa si el input matchea con las palabras aceptadas (regex)
+    for i in range(len(listwords)):
+        word = listwords[i]
+        if re.match(expression, word): 
+            print("The word ", word, "is accepted")
         else:
-            print(word, " = Rejected")
-    else:
-        print(word, " = Rejected")
+            print("The word ", word, "is NOT accepted")
 
+def start():
+    while True:
+        test = input("Enter word(s) separated by commas: ")
+        if not test:
+            print("Empty input")
+            break
+        listwords = parse(test)
+        accepted(listwords)
 
-# Pruebas
-parse("mahdi")
-parse("maqbara")
-parse("matar")
-parse("maula")
-parse("midri")
-
-parse("mahd")    # Rejected
-parse("matra")   # Rejected
-parse("midrii")  # Rejected
-parse("mxdri")   # Rejected
+start()
