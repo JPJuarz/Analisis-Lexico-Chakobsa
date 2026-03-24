@@ -7,7 +7,7 @@
 En el área de la computación, el poder identificar y procesar diferentes lenguajes es algo fundamental y crítico por lo que en este proyecto lo que fue hecho fue desarrollar un analizador léxico cuyo objetivo es reconocer un conjunto específico de palabras pertenecientes al idioma Chakobsa. 
 El lenguaje que se estudiará no corresponde a todo el idioma Chakobsa sino a una pequeña parte compuesta por 5 diferentes palabras pertenecientes a este. Estas palabras son: **mahdi, maqbara, matar, maula** y **midri**. Por esto mismo, el sistema tiene que ser capaz de aceptar solamente estas palabras y rechazar cualquier otra cadena que no coincida exactamente con estos patrones. Esto incluye lo que son entradas con letras fuera del alfabeto definido o combinaciones incorrectas de símbolos.
 
-Para esto mismo se utilizara lo que es un autómata finito determinista (DFA) el cual es un modelo matemático utilizado para reconocer patrones dentro de cadenas de texto. Se compone de 5 diferentes componentes los cuales son un conjunto finito de estados, un alfabeto de símbolos de entrada, una función de transición, un estado inicial y un conjunto de estados de aceptación.
+Para esto mismo se utilizara lo que es "un autómata finito determinista (DFA) el cual es un modelo matemático utilizado para reconocer patrones dentro de cadenas de texto. Se compone de 5 diferentes componentes los cuales son un conjunto finito de estados, un alfabeto de símbolos de entrada, una función de transición, un estado inicial y un conjunto de estados de aceptación." (Linz, 2017)
 El funcionamiento del autómata consiste en iniciar en un estado inicial y procesar una cadena símbolo por símbolo. En cada paso, el autómata cambia de estado según la función de transición que sea definida y al finalizar la cadena, si el estado en el que termina pertenece al conjunto de estados de aceptación regresara si la cadena es aceptada o rechazada.
 
 Formalmente, estas son las partes que definen a un DFA:
@@ -120,3 +120,5 @@ El uso de un DFA es el método más óptimo en este caso, ya que garantiza un ti
 AutomataVerse. (2026). Visualize Automata. Recuperado de https://www.automataverse.com/
 
 Herbert, F. (2005). Dune. Ace Books.
+
+Linz, P. (2017). An introduction to formal languages and automata (6th ed.). Jones & Bartlett Learning.
