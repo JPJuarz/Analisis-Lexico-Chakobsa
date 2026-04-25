@@ -80,25 +80,43 @@ Aceptados
 Rechazado
 - parse([m,a,h,c]).
 - parse([m,a,u,a,l).
+- parse([m,a,q,b,a,r,r,a]).
+- parse([m,a,d,h,i]).
+- parse([h,a,l]).
+- parse([m,a,t,a,r,a]).
+- parse([m,i,a,t,a]).
+- parse([m,i,t,s,u,b,i,s,h,i]).
+- parse([m,a,u,l]).
+- parse([m,a,u,l,a,a]).
+- parse([m,i,r,d,i]).
+- parse([m,a,m,a]).
+- parse([m,e,r,i,c,a]).
+- parse([m,o,t,h,e,r]).
+- parse([m,a,l,a,w,i]).
+- parse([m,a,2]).
+- parse([m,y,a,n,m,a,r]).
+- parse([m,o,r,i,r]).
+- parse([m,i,s,i,l]).
+- parse([m,i,t,i]).
+- parse([m,a,q,b,a,r,i,t,a]).
+- parse([m,a,a,a,a]).
+- parse([m,?]).
+- parse([m,e,h]).
 
-**En Python**
+**En Python (REGEX)**
 
 1. Descargar o copiar codigo
 2. Abrir código en VSCode (o pegarlo)
 3. Correr codigo
-
-Dentro del código igualmente vienen varios ejemplos pero también los voy a poner justo debajo.
+4. Insertar palabras separadas por comas (sin espacios) 
 
 Aceptados
-- parse("mahdi")
-- parse("maqbara")
-- parse("matar")
-- parse("maula")
-- parse("midri")
+
+mahdi,maqbara,matar,maula,midri
 
 Rechazados
-- parse("mahd")    
-- parse("matra")   
+
+mahd,matra,maqbarra,madhi,hal,matara,miata,mitsubishi,maul,maulaamirdi,mama,merica,mother,malawi,ma2,myanmar,morir,misil,miti,maqbarita,maaaaaa,m?,meh
 
 
 ## Análisis
