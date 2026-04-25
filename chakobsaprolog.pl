@@ -68,6 +68,37 @@ parse_temp([Symbol|Rest], CurrentState) :-
     move(CurrentState, Symbol, NextState),
     parse_temp(Rest, NextState).
 
-% Preubas
+%% Pruebas Aceptadas
+
 % parse([m,a,h,d,i]).
+% parse([m,a,q,b,a,r,a]).
+% parse([m,a,t,a,r]).
+% parse([m,a,u,l,a]).
+% parse([m,i,d,r,i]).
+
+%% Pruebas no aceptadas
+
 % parse([m,a,h,c]).
+% parse([m,a,u,a,l]).
+% parse([m,a,q,b,a,r,r,a]).
+% parse([m,a,d,h,i]).
+% parse([h,a,l]).
+% parse([m,a,t,a,r,a]).
+% parse([m,i,a,t,a]).
+% parse([m,i,t,s,u,b,i,s,h,i]).
+% parse([m,a,u,l]).
+% parse([m,a,u,l,a,a]).
+% parse([m,i,r,d,i]).
+% parse([m,a,m,a]).
+% parse([m,e,r,i,c,a]).
+% parse([m,o,t,h,e,r]).
+% parse([m,a,l,a,w,i]).
+% parse([m,a,2]).
+% parse([m,y,a,n,m,a,r]).
+% parse([m,o,r,i,r]).
+% parse([m,i,s,i,l]).
+% parse([m,i,t,i]).
+% parse([m,a,q,b,a,r,i,t,a]).
+% parse([m,a,a,a,a]).
+% parse([m,?]).
+% parse([m,e,h]).
